@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+:root {
+    --fonte_padrao : 'Verdana'
+}
+
+header {
+    background-color: #FFD900;
+    padding: 26px 0px 26px 60px;
+}
+
+section {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    column-gap: 1%;
+}
+
+    #text {
+        background-color: #514988;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        #text h1 {
+            color: #F3C61F;
+            font-family: var(--fonte_padrao);
+            font-size: 60px;
+            font-weight: 700;
+            line-height: normal;
+            margin: 30px 0;
+        }
+
+        #text h3 {
+            color: #FFF;
+            font-family: var(--fonte_padrao);
+            font-size: 30px;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 50px;
+        }
+
+        #text p {
+            color: #FFF;
+            font-family: var(--fonte_padrao);
+            font-size: 25px;
+            font-weight: 300;
+            line-height: normal;
+            width: 88%;
+            margin-bottom: 70px;
+            text-align: center;
+        }
+
+        #cronometro {
+            display: flex;
+            justify-content: space-around;
+            color: #514988;
+            font-family: var(--fonte_padrao);
+            font-size: 35px;
+            font-weight: 700;
+            line-height: normal;
+            margin: 30px 0;
+        }
+
+        #timer h3 {
+            color: #E33881;
+            text-align: center;
+            font-family: var(--fonte_padrao);
+            font-size: 25px;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        #video {
+            margin-top: 30px;
+        }
+
+footer {
+    display: grid;
+    grid-auto-flow: column;
+    columns: auto;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+    #caixa_dias h3 {
+        text-align: center;
+        color: #F3C61F;
+        font-family: var(--fonte_padrao);
+        font-size: 25px;
+        font-weight: 700;
+        line-height: normal;
+        margin: 20px 0;
+    }
+
+button {
+    background-color: #514988;
+    color: #FFF;
+    font-family: var(--fonte_padrao);
+    font-size: 35px;
+    font-weight: 700;
+    line-height: normal;
+    width: 400px;
+    height: 130px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+@media (max-width: 400px) {
+
+    header {
+        text-align: center;
+        padding: 26px 0;
+    }
+    
+    section {
+        display: grid;
+        grid-auto-flow: row;
+    }
+
+        #text h1 {
+            font-size: 35px;
+        }
+
+        #text h3 {
+            text-align: center;
+        }
+
+        #cronometro {
+            font-size: 20px;
+            display: grid;
+            grid-auto-flow: column;
+            columns: auto;
+        }
+
+        #video {
+            text-align: center;
+        }
+
+            #video video {
+                width: 95%;
+            }
+
+    footer {
+        display: grid;
+        grid-auto-flow: row;
+        display: inline-block;
+        text-align: center;
+    }
+
+        #dias {
+            text-align: center;
+        }
+
+            #dias img {
+                width: 49%;
+                padding-bottom: 15px;
+            }
+
+        button {
+            width: 90%;
+        }
+}
