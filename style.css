@@ -111,7 +111,7 @@ button {
     border-radius: 15px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 900px) {
 
     header {
         text-align: center;
